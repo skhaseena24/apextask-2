@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    padding:20px;
+}
+
+/* Navbar Flexbox */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#008080;
+    color:white;
+    padding:15px;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+}
+
+.navbar ul li{
+    margin-left:20px;
+}
+
+.navbar ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+/* Grid Layout */
+.grid-container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin:20px 0;
+}
+
+.box{
+    background:#00a99d;
+    color:white;
+    padding:30px;
+    text-align:center;
+    border-radius:10px;
+}
+
+/* Form */
+.form-section{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.form-section h2{
+    margin-bottom:10px;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+button{
+    background:#008080;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+button:hover{
+    background:#006666;
+}
+
+#error{
+    color:red;
+    margin-top:10px;
+}
+
+/* To Do List */
+.todo-section{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+#taskList{
+    margin-top:15px;
+}
+
+#taskList li{
+    background:#ddd;
+    padding:10px;
+    margin:5px 0;
+    display:flex;
+    justify-content:space-between;
+}
+
+.delete-btn{
+    background:red;
+    padding:5px 10px;
+}
+
+/* Responsive Design */
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+    }
+
+    .navbar ul{
+        flex-direction:column;
+        margin-top:10px;
+    }
+
+    .grid-container{
+        grid-template-columns:1fr;
+    }
+}

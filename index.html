@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <h2>My Website</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Tasks</a></li>
+        </ul>
+    </nav>
+
+    <!-- Responsive Grid Layout -->
+    <div class="grid-container">
+        <div class="box">HTML</div>
+        <div class="box">CSS</div>
+        <div class="box">JavaScript</div>
+        <div class="box">Responsive Design</div>
+    </div>
+
+    <!-- Contact Form -->
+    <section class="form-section">
+        <h2>Contact Form</h2>
+
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Enter Name">
+            <input type="email" id="email" placeholder="Enter Email">
+            <textarea id="message" placeholder="Enter Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="error"></p>
+    </section>
+
+    <!-- To-Do List -->
+    <section class="todo-section">
+        <h2>To-Do List</h2>
+
+        <input type="text" id="taskInput" placeholder="Enter Task">
+        <button onclick="addTask()">Add Task</button>
+
+        <ul id="taskList"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
